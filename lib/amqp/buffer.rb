@@ -303,9 +303,9 @@ if $0 =~ /bacon/ or $0 == __FILE__
     end
 
     should 'have a length' do
-      @buf.length.should == 0
+      @buf.bytesize.should == 0
       @buf << 'abc'
-      @buf.length.should == 3
+      @buf.bytesize.should == 3
     end
 
     should 'know the end' do
